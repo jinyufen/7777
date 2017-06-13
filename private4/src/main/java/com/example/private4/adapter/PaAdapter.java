@@ -20,7 +20,7 @@ public class PaAdapter extends FragmentPagerAdapter {
         super(fm);
         this.fragments=fragments;
     }
-
+//asdfghjkaSDFGHJ
     @Override
     public Fragment getItem(int position) {
         return fragments.get(position);
