@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.private4.MainActivity">
+<android.support.v7.widget.Toolbar
+    android:id="@+id/toobar"
+    android:background="#8dfdc7"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+</android.support.v7.widget.Toolbar>
+    <ImageView
+        android:layout_below="@+id/toobar"
+        android:id="@+id/circleImageView"
+        android:layout_width="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/luobo"
+         />
+
+    <LinearLayout
+        android:id="@+id/lin"
+        android:layout_below="@+id/circleImageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/circleImageView2"
+                android:layout_width="100dp"
+                android:layout_marginTop="20dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/man"
+                />
+            <TextView
+                android:text="我是个小哥"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_weight="1"
+                android:id="@+id/circleImageView3"
+                android:layout_width="100dp"
+                android:layout_marginTop="20dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/woman"
+                />
+            <TextView
+                android:text="我是个妹子"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/ed1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/circleImageView"
+        android:hint="用户名" />
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/ed2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ed1"
+        android:hint="密码" />
+    <ImageView
+        android:id="@+id/wenhao"
+        android:src="@drawable/wenhao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ed2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="12dp" />
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/ed3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ed2"
+        android:hint="确认密码" />
+
+
+    <Button
+        android:background="@drawable/shape1"
+        android:id="@+id/but1"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ed2"
+        android:text="登录" />
+
+    <Button
+        android:id="@+id/but2"
+        android:background="@drawable/shape1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="新用户注册"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="65dp" />
+
+</RelativeLayout>

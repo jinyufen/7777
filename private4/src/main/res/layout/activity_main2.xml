@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.private4.Main2Activity">
+    <LinearLayout
+
+android:orientation="horizontal"
+        android:background="#8dfdc7"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/relativeLayout"
+        android:weightSum="4">
+        <ImageView
+            android:src="@drawable/erweima"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <EditText
+            android:background="@drawable/shape2"
+            android:layout_centerInParent="true"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_weight="2"
+            android:layout_marginTop="5dp"/>
+        <ImageView
+            android:src="@drawable/bianji"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/relativeLayout">
+
+    </android.support.v4.view.ViewPager>
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:orientation="horizontal"
+        android:background="#8dfdc7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll"
+        android:layout_alignParentStart="true">
+            <RadioButton
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:id="@+id/man2_img1"
+                android:background="@drawable/selver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:id="@+id/man2_img2"
+                android:background="@drawable/selver2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="true"
+                android:id="@+id/man2_img3"
+                android:background="@drawable/selver3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:id="@+id/man2_img4"
+                android:background="@drawable/selver4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:id="@+id/man2_img5"
+                android:background="@drawable/selver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:id="@+id/man2_img6"
+                android:background="@drawable/selver6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+    </RadioGroup>
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#8dfdc7"
+        android:orientation="horizontal"
+        android:weightSum="6"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_weight="1"
+            android:text="视 频"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_weight="1"
+            android:text="书 城"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_weight="1"
+            android:text="主 页"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_weight="1"
+            android:text="结 界"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_weight="1"
+            android:text="买 买"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_weight="1"
+            android:text="我 的"
+            android:textSize="15dp" />
+    </LinearLayout>
+</RelativeLayout>
